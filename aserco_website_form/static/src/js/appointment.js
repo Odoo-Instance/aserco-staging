@@ -29,8 +29,6 @@ $(document).on('change', '#ooatg10rhyw', function(event){
 $(document).on('change', '#okg1p4jr9pzo, #ooatg10rhyw, #onfx304tmmt0, #onfx304tmmt1', function(event){
    var service_type  = $('#ooatg10rhyw').val();
    var area  = $('#okg1p4jr9pzo').val();
-//   var time_slot_am  = $('#onfx304tmmt0').val();
-//   var time_slot_pm  = $('#onfx304tmmt1').val();
    var timeslot = $("input[type='radio'][name='x_studio_preferred_time_slot']:checked").val();
 
       $.ajax({
@@ -44,35 +42,10 @@ $(document).on('change', '#okg1p4jr9pzo, #ooatg10rhyw, #onfx304tmmt0, #onfx304tm
       .then(function(result){
           console.log(result)
           if (result) {
-              $('#asd').html(result);
-
+              $('#x_studio_preferred_service_schedule').html(result);
           }
       });
 
 });
-
-    /*
-      Added Method to Get value of Preferred Service Date
-  */
-$(document).on('change', '#asd', function(event){
-   var service_date  = $('#asd').val();
-//   document.getElementById("orxyvs0xm7ts").value = asd;
-
-      $.ajax({
-          url : "/get_date",
-          data: {
-              'service_date': service_date
-          },
-      })
-      .then(function(result){
-          console.log(result)
-          if (result) {
-              $('#orxyvs0xm7ts').html(result);
-
-          }
-      });
-
-});
-
 
 });

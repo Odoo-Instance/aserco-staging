@@ -41,9 +41,10 @@
                   </label>
                   <div class="col-sm">
                     <select class="form-control s_website_form_input" name="x_studio_awb_service_type_id" required="1" id="ooatg10rhyw" style="">
-                     <t t-foreach="services or []" t-as="service">
+                      <option value="">select...</option>
+                      <t t-foreach="services or []" t-as="service">
                         <option t-esc="service.name" t-att-value="service.id"/>
-                    </t>
+                      </t>
                     </select>
                   </div>
                 </div>
@@ -56,10 +57,10 @@
                   </label>
                   <div class="col-sm">
                     <select class="form-control s_website_form_input" name="x_studio_area_id" required="1" id="okg1p4jr9pzo" style="">
-                      <option value="10801" selected="selected">Ilocos</option>
-                      <option value="10803">Cagayan Valley</option>
-                      <option value="10805">Rizal (test)</option>
-
+                      <option value="">select...</option>
+                      <t t-foreach="areas or []" t-as="area">
+                        <option t-esc="area.name" t-att-value="area.id"/>
+                      </t>
                     </select>
                   </div>
                 </div>
@@ -99,15 +100,36 @@
                     <span class="s_website_form_mark">             *</span>
                   </label>
                   <div class="col-sm">
-                    <select class="form-control s_website_form_input" name="x_studio_asd_id" required="1" id="asd" style="">
+                    <select class="form-control s_website_form_input" name="x_studio_preferred_service_schedule" required="1" id="x_studio_preferred_service_schedule" style="">
+                      <option value="">select...</option>
                       <t t-foreach="dates or []" t-as="date">
                         <option t-esc="date.x_name" t-att-value="date.id"/>
                       </t>
                     </select>
+                    <div class="s_website_form_field_description small form-text text-muted">CSR will connect with you to finalize the service based on your nominated preferences.</div>
                   </div>
                 </div>
               </div>
-              <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_required" data-type="date" data-name="Field">
+              <!--<div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_required" data-type="date" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="orxyvs0xm7ts">
+                    <span class="s_website_form_label_content">Preferred Service Date (hidden date field)</span>
+                    <span class="s_website_form_mark">    *</span>
+                  </label>
+                  <div class="col-sm">
+                    <div class="s_website_form_date input-group date" id="datepicker47217243259231423" data-target-input="nearest">
+                      <input data-date-format="YYYY-MM-DD" type="text" class="form-control datetimepicker-input s_website_form_input" data-target="#datepicker47217243259231423" name="x_studio_preferred_service_schedule" required="1" placeholder="" id="orxyvs0xm7ts" data-fill-with="undefined"/>
+                      <div class="input-group-append" data-target="#datepicker47217243259231423" data-toggle="datetimepicker">
+                        <div class="input-group-text">
+                          <i class="fa fa-calendar"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s_website_form_field_description small form-text text-muted">CSR will connect with you to finalize the service based on your nominated preferences.</div>
+                  </div>
+                </div>
+              </div>-->
+              <!--<div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_required" data-type="date" data-name="Field">
                 <div class="row s_col_no_resize s_col_no_bgcolor">
                   <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="orxyvs0xm7ts">
                     <span class="s_website_form_label_content">Preferred Service Date (date value)</span>
@@ -123,6 +145,16 @@
                       </div>
                     </div>
                     <div class="s_website_form_field_description small form-text text-muted">CSR will connect with you to finalize the service based on your nominated preferences.</div>
+                  </div>
+                </div>
+              </div>-->
+              <div data-visibility-condition="" data-visibility-between="" class="d-none form-group s_website_form_field col-12" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="partner_id">
+                    <span class="s_website_form_label_content">Partner</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name="partner_id"  t-att-value="partner_id" placeholder="" id="partner_id" data-fill-with="undefined"/>
                   </div>
                 </div>
               </div>
