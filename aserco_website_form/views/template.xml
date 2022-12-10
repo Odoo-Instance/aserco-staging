@@ -164,7 +164,7 @@
                     <span class="s_website_form_label_content">Customer Name</span>
                   </label>
                   <div class="col-sm">
-                    <input type="text" class="form-control s_website_form_input" name="x_studio_customer_name_1" value="" placeholder="" id="o2g4pbh07vrb" data-fill-with="undefined"/>
+                    <input type="text" class="form-control s_website_form_input" name="x_studio_customer_name_1" t-att-value="x_studio_customer_name_1" placeholder="" id="o2g4pbh07vrb" data-fill-with="undefined"/>
                   </div>
                 </div>
               </div>

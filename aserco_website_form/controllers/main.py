@@ -19,6 +19,7 @@ class PortalUser(http.Controller):
             'services': services,
             'areas': areas,
             'dates': dates,
+            'x_studio_customer_name_1': user_id.partner_id.name,
             'partner_id': user_partner_id
         })
         return http.request.render("aserco_website_form.appointment_form", values)
