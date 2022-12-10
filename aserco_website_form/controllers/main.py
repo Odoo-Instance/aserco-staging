@@ -14,12 +14,15 @@ class PortalUser(http.Controller):
         dates = []
         user_id = request.env.user
         user_partner_id = request.env["res.users"].search([('id', '=', user_id.id)]).partner_id.id
-
+        philipines_id = request.env["res.country"].search([('name', '=', 'Philippines')])
+        states = request.env["res.country.state"].search([('country_id', '=', philipines_id.id)])
         values.update({
             'services': services,
             'areas': areas,
             'dates': dates,
             'x_studio_customer_name_1': user_id.partner_id.name,
+            'x_studio_contact_no':user_id.partner_id.mobile or user_id.partner_id.phone,
+            'states':states,
             'partner_id': user_partner_id
         })
         return http.request.render("aserco_website_form.appointment_form", values)
