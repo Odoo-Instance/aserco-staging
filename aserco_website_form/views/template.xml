@@ -110,44 +110,7 @@
                   </div>
                 </div>
               </div>
-              <!--<div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_required" data-type="date" data-name="Field">
-                <div class="row s_col_no_resize s_col_no_bgcolor">
-                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="orxyvs0xm7ts">
-                    <span class="s_website_form_label_content">Preferred Service Date (hidden date field)</span>
-                    <span class="s_website_form_mark">    *</span>
-                  </label>
-                  <div class="col-sm">
-                    <div class="s_website_form_date input-group date" id="datepicker47217243259231423" data-target-input="nearest">
-                      <input data-date-format="YYYY-MM-DD" type="text" class="form-control datetimepicker-input s_website_form_input" data-target="#datepicker47217243259231423" name="x_studio_preferred_service_schedule" required="1" placeholder="" id="orxyvs0xm7ts" data-fill-with="undefined"/>
-                      <div class="input-group-append" data-target="#datepicker47217243259231423" data-toggle="datetimepicker">
-                        <div class="input-group-text">
-                          <i class="fa fa-calendar"/>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="s_website_form_field_description small form-text text-muted">CSR will connect with you to finalize the service based on your nominated preferences.</div>
-                  </div>
-                </div>
-              </div>-->
-              <!--<div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_required" data-type="date" data-name="Field">
-                <div class="row s_col_no_resize s_col_no_bgcolor">
-                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="orxyvs0xm7ts">
-                    <span class="s_website_form_label_content">Preferred Service Date (date value)</span>
-                    <span class="s_website_form_mark">    *</span>
-                  </label>
-                  <div class="col-sm">
-                    <div class="s_website_form_date input-group date" id="datepicker47217243259231423" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input s_website_form_input" data-target="#datepicker47217243259231423" name="x_studio_preferred_service_schedule" required="1" placeholder="" id="orxyvs0xm7ts" data-fill-with="undefined"/>
-                      <div class="input-group-append" data-target="#datepicker47217243259231423" data-toggle="datetimepicker">
-                        <div class="input-group-text">
-                          <i class="fa fa-calendar"/>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="s_website_form_field_description small form-text text-muted">CSR will connect with you to finalize the service based on your nominated preferences.</div>
-                  </div>
-                </div>
-              </div>-->
+
               <div data-visibility-condition="" data-visibility-between="" class="d-none form-group s_website_form_field col-12" data-type="char" data-name="Field">
                 <div class="row s_col_no_resize s_col_no_bgcolor">
                   <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="partner_id">
@@ -201,7 +164,7 @@
                     <span class="s_website_form_mark"> *</span>
                   </label>
                   <div class="col-sm">
-                    <input type="text" class="form-control s_website_form_input" name="street" value="" placeholder="" id="obod2fleofm" data-fill-with="undefined" required=""/>
+                    <input type="text" class="form-control s_website_form_input" name="x_studio_street" value="" placeholder="" id="obod2fleofm" data-fill-with="undefined" required="1"/>
                   </div>
                 </div>
               </div>
@@ -212,7 +175,7 @@
                     <span class="s_website_form_mark"> *</span>
                   </label>
                   <div class="col-sm">
-                    <input type="text" class="form-control s_website_form_input" name="street2" value="" placeholder="" id="o32lv0k6ojox" data-fill-with="undefined" required=""/>
+                    <input type="text" class="form-control s_website_form_input" name="x_studio_barangay" value="" placeholder="" id="o32lv0k6ojox" data-fill-with="undefined" required="1"/>
                   </div>
                 </div>
               </div>
@@ -223,7 +186,7 @@
                     <span class="s_website_form_mark"> *</span>
                   </label>
                   <div class="col-sm">
-                    <input type="text" class="form-control s_website_form_input" name="city" value="" placeholder="" id="oklvhg10zi7" data-fill-with="undefined" required=""/>
+                    <input type="text" class="form-control s_website_form_input" name="x_studio_city_1" value="" placeholder="" id="oklvhg10zi7" data-fill-with="undefined" required="1"/>
                   </div>
                 </div>
               </div>
@@ -234,7 +197,7 @@
                     <span class="s_website_form_mark">       *</span>
                   </label>
                   <div class="col-sm">
-                    <select class="form-control s_website_form_input" name="state_id" required="1" id="oeumymwlmnto" style="">
+                    <select class="form-control s_website_form_input" name="x_studio_province" required="1" id="oeumymwlmnto" style="">
                       <option value="">--Select--</option>
                       <t t-foreach="states" t-as="state">
 
