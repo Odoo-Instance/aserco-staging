@@ -15,7 +15,7 @@ class PortalUser(http.Controller):
         user_id = request.env.user
         user_partner_id = request.env["res.users"].search([('id', '=', user_id.id)]).partner_id.id
         philipines_id = request.env["res.country"].search([('name', '=', 'Philippines')])
-        states = request.env["res.country.state"].search([('country_id', '=', philipines_id.id)])
+        states = request.env["res.country.state"].search([('country_id', '=', philipines_id.id)],order='name asc')
         values.update({
             'services': services,
             'areas': areas,
